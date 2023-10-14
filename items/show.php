@@ -2,6 +2,12 @@
 
 <h1><?php echo metadata('item', 'rich_title', array('no_escape' => true)); ?></h1>
 
+<div id="itemimages">
+
+    <?php external_thumbs($item, 3, TRUE, FALSE); ?>
+
+</div>
+
 <?php if ((get_theme_option('Item FileGallery') == 0) && metadata('item', 'has files')): ?>
 <?php echo files_for_item(array('imageSize' => 'fullsize')); ?>
 <?php endif; ?>
