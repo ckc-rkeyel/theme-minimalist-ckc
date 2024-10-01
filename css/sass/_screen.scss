@@ -478,6 +478,7 @@ a {
             a {
                 color:$accent-main;
                 padding:1em;
+                border-bottom:1px solid white;
             }
             a:hover {
                 color:white;
@@ -499,8 +500,6 @@ a {
         content: "\f0da";
         margin: 0 0 0 .5em;
         vertical-align: bottom;
-        display: inline-block;
-        width: .25 * $spacing-unit;
     }
 
     [aria-haspopup="true"].open:after {
@@ -692,10 +691,6 @@ button,
     label {
         display: inline-block;
     }
-}
-
-.inputs select {
-    max-width: 100%;
 }
 
 #advanced-search-form {
